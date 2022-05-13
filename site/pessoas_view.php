@@ -5,6 +5,16 @@
 
 ?>
 
+<DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+
+            <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+            <title>Document</title>
+
+        </head>
+
 <body>
     <table class="table">
         <thead class="thead-dark">
@@ -17,12 +27,12 @@
         </thead>
 
         <tbody>
-            <?php foreach ($item as $dados_clientes) { ?>
+            <?php foreach ($dados_clientes as $item) { ?>
 
                 <tr>
-                    <td><?php echo $item['nome']; ?></td>
-                    <td><?php echo $item['idade']; ?></td>
-                    <td><?php echo $item['estado']; ?></td>
+                    <td><?php echo $item['Nome']; ?></td>
+                    <td><?php echo $item['Idade']; ?></td>
+                    <td><?php echo $item['Estado']; ?></td>
                 </tr>
 
                 <?php } ?>
@@ -30,5 +40,6 @@
         </tbody> 
         
     </table>
-            </body>
+</body>
+</html>
             
